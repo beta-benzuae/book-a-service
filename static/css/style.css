@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+ol:not(.get_list_style ol),
+ul:not(.get_list_style ul) {
+	list-style: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "poppins";
+	font-size: 18px;
+	color: #fff;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	scroll-behavior: smooth;
+	position: relative;
+    background: #000000;
+}
+p {
+	line-height: 1.6;
+	color: #fff;
+	font-size: 17px;
+	line-height: 140%;
+}
+
+input,
+textarea,
+select {
+	font-family: "Inter";
+	font-weight: 500;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+a {
+	color: #fff;
+	font-family: "Inter";
+	cursor: pointer;
+	letter-spacing: 0.05em;
+}
+
+button {
+	cursor: pointer;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1350px;
+
+}
+.overlay{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.overlay2{
+    z-index:-1;
+     opacity: 0.7;
+     background: #000000;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+header .right{
+    width: 50%;
+}
+header .right ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .right ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+header .right ul li a{
+    font-weight: 600;
+}
+#content{
+    width: 100%;
+    height:100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content .container{ 
+    width:70%;
+}
+#content .container .subContainer{
+   
+}
+
+#content .container .head {
+    margin-bottom: 20px;
+}
+#content .container .head h6{
+    font-weight: 600;
+    font-size: 30px;
+}
+#content .container form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#content .container .bottom input{
+    margin-bottom: 17px;
+	padding: 18px 25px;
+	background: #000000;
+    opacity: 1;
+	width: 100%;
+    font-size: 16px;
+    width: 49.5%;
+    border: 1px solid rgb(0, 0, 0);
+}
+#content .container .bottom input:hover,#content .container .bottom input:focus{
+    border: 1px solid #fff;
+}
+#content .container .bottom form .twoInput{
+    display: flex;
+    width: 49.5%;
+    justify-content: space-between;
+}
+#content .container .bottom form .twoInput input{
+    width:49%
+}
+#content .container .bottom form  .w-100{
+    width: 100%;
+}#content .container .bottom .button{
+    margin: 0 auto;
+}
+#content .container .bottom .submit{
+    background: #ffffff;
+    padding: 10px 50px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    width: 49% !important;
+}
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background: #000000;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 25px;
+    right: 25px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top:18px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 18px 25px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    font-size:16px;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background: #000000;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: #2d2d2d;
+  }
