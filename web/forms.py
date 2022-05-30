@@ -1,6 +1,4 @@
 from django.forms import ModelForm, Textarea, TextInput, FileInput,URLInput,Select,BooleanField,DateInput
-from django.utils.translation import ugettext_lazy as _
-from django import forms
 from web.models import *
 
 
@@ -14,8 +12,8 @@ class ServiceForm(ModelForm):
             'phone': TextInput(attrs={'class': ' ', 'placeholder': 'Contact Number'}),
             'vehicle_number': TextInput(attrs={'class': '   ', 'placeholder': 'Vehicle Number'}),
             'kms_driven': TextInput(attrs={'class': ' ', 'placeholder': 'Kilometers Driven'}),
-            'time' : Select(attrs={'class':'',}),
-            'date': DateInput(format=('%d-%m-%Y'), attrs={'type':'date', 'class':'','placeholder':'Select date'}),
+            'time' : Select(attrs={'class':'custom-select',}),
+            'date': DateInput(format=('%d-%m-%Y'), attrs={ 'class':'datepicker', 'placeholder':'Select date'}),
             'message': TextInput(attrs={'class': ' w-100 ', 'placeholder': 'Service Needed'}),
         }
 

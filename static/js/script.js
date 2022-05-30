@@ -1,4 +1,5 @@
 $(document).on("submit", "form.ajax", function (e) {
+
     e.preventDefault();
     var $this = $(this);
 
@@ -109,3 +110,13 @@ $(document).on("submit", "form.ajax", function (e) {
         },
     });
 });
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+    $( "input.datepicker" ).datepicker({
+        dateFormat: "mm/dd/yy"
+        ,	duration: "fast"
+      });
+
+});
+

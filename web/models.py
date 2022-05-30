@@ -5,7 +5,7 @@ from web.variables import phone_regex
 
 
 TIME =(
-    ("","Choose Time"),
+    ("","Time"),
     ("Anytime","Anytime"),
     ("Morning","Morning"),
     ("Afternoon","Afternoon"),
